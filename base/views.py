@@ -3,7 +3,7 @@ from django.http import JsonResponse
 import random
 import time
 from agora_token_builder import RtcTokenBuilder
-from .models import RoomMember
+from .models import Destination, RoomMember
 import json
 from django.views.decorators.csrf import csrf_exempt
 
@@ -15,12 +15,18 @@ def lobby(request):
     return render(request, 'base/lobby.html')
 
 def room(request):
-    return render(request, 'base/room.html')
+    return render(request, 'base/room.html' )
 
+def dynamic(request):
+    dests= Destination.objects.all()
+    return render(request, 'base/dynamic.html', {'dests':dests})
+
+def chatroom(request):
+    return render(request, 'base/chatroom.html')
 
 def getToken(request):
-    appId = "YOUR APP ID"
-    appCertificate = "YOUR APP CERTIFICATE"
+    appId = "22b451f5433a4e66980a445ce5dd59ae"
+    appCertificate = "3cb6ed1ca6684c5e95c2793785cc04de"
     channelName = request.GET.get('channel')
     uid = random.randint(1, 230)
     expirationTimeInSeconds = 3600
