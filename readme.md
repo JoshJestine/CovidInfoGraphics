@@ -1,7 +1,7 @@
 # MyChat
 
 ## Description 
-A Group video calling application using the Agora Web SDK with a Django backend.
+A dynamic Group video calling application using the Agora Web SDK with a Django backend with postgres database
 
 ##  How to use this source code
 
