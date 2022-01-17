@@ -15,6 +15,8 @@ class Destination(models.Model):
     
     name = models.CharField(max_length=100)
     img = models.ImageField(upload_to='pics')
+    createdTime = models.DateTimeField(auto_now_add=True)
+    updatedTime = models.DateTimeField(auto_now=True)
     desc = models.TextField()
     price = models.IntegerField()
     offer = models.BooleanField(default=False)

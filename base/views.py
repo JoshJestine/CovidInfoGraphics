@@ -18,7 +18,7 @@ def room(request):
     return render(request, 'base/room.html' )
 
 def dynamic(request):
-    dests= Destination.objects.all()
+    dests= Destination.objects.all().order_by('-createdTime')
     return render(request, 'base/dynamic.html', {'dests':dests})
 
 def chatroom(request):
