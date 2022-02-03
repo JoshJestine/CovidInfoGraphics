@@ -14,6 +14,9 @@ from django.views.decorators.csrf import csrf_exempt
 def lobby(request):
     return render(request, 'base/lobby.html')
 
+def index(request):
+    return render(request, 'base/index.html')
+
 def room(request):
     return render(request, 'base/room.html' )
 

@@ -3,7 +3,7 @@ from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
-    path('', views.lobby),
+    path('', views.index),
     path('room/', views.room),
     path('get_token/', views.getToken),
     path('chatroom/', views.chatroom),
