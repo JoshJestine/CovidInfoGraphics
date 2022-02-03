@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', views.index),
     path('room/', views.room),
+    path('lobby/', views.lobby),
     path('get_token/', views.getToken),
     path('chatroom/', views.chatroom),
     path('dynamic/', views.dynamic),
