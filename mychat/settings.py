@@ -23,7 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-cly%(5-34f8d1pc_fi*l_p@m3^x%#a$!iq(yu=s&&ez%-_pk$3'
+SECRET_KEY ='django-insecure-cly%(5-34f8d1pc_fi*l_p@m3^x%#a$!iq(yu=s&&ez%-_pk$3'
+WE_CHAT_USR = os.environ.get("WE_CHAT_USR") or ""
+WE_CHAT_PASS = os.environ.get("WE_CHAT_PASS") or ""
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -78,12 +80,15 @@ WSGI_APPLICATION = 'mychat.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'wechat',
-        'USER': 'postgres',
-        'PASSWORD': '1234',
-        'HOST': 'localhost'
+    "default": {
+        "ENGINE": "djongo",
+        "CLIENT": {
+            'name': 'wechat',
+            'host': 'mongodb+srv://'+WE_CHAT_USR+':'+WE_CHAT_PASS+'@cluster0.1yefb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+            'username': WE_CHAT_USR,
+            'password': WE_CHAT_PASS,
+            "authMechanism": "SCRAM-SHA-1",
+        },
     }
 }
 

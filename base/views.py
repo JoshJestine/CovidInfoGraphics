@@ -14,11 +14,14 @@ from django.views.decorators.csrf import csrf_exempt
 def lobby(request):
     return render(request, 'base/lobby.html')
 
+def index(request):
+    return render(request, 'base/index.html')
+
 def room(request):
     return render(request, 'base/room.html' )
 
 def dynamic(request):
-    dests= Destination.objects.all()
+    dests= Destination.objects.all().order_by('-createdTime')
     return render(request, 'base/dynamic.html', {'dests':dests})
 
 def chatroom(request):
