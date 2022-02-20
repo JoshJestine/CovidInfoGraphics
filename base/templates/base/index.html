@@ -49,8 +49,16 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+
+          {% if user.is_authenticated %}
+          <li><a class="nav-link scrollto">Hello, {{user.first_name}}</a></li>
+          <li><a class="nav-link scrollto" href="accounts/logout">Logout</a></li>
+          {% else %}
+          
+          <li><a class="nav-link scrollto" href="accounts/register">register</a></li>
+          <li><a class="nav-link scrollto" href="accounts/login">Login</a></li>
+          {% endif %}
+
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a href="blog.html">Blog</a></li>
