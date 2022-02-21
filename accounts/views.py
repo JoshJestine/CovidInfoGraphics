@@ -18,7 +18,7 @@ def login(request):
             return redirect('login')
 
     else:
-        return render(request,'base/login.html')  
+        return render(request,'login.html')  
 
 def register(request):
     
@@ -48,7 +48,7 @@ def register(request):
         return redirect('/')
         
     else:
-        return render(request,'base/register.html')
+        return render(request,'register.html')
 
 
 def logout(request):

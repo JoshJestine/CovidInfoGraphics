@@ -12,20 +12,20 @@ from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 
 def lobby(request):
-    return render(request, 'base/lobby.html')
+    return render(request, 'lobby.html')
 
 def index(request):
-    return render(request, 'base/index.html')
+    return render(request, 'index.html')
 
 def room(request):
-    return render(request, 'base/room.html' )
+    return render(request, 'room.html' )
 
 def dynamic(request):
     dests= Destination.objects.all().order_by('-createdTime')
-    return render(request, 'base/dynamic.html', {'dests':dests})
+    return render(request, 'dynamic.html', {'dests':dests})
 
 def chatroom(request):
-    return render(request, 'base/chatroom.html')
+    return render(request, 'chatroom.html')
 
 def getToken(request):
     appId = "22b451f5433a4e66980a445ce5dd59ae"
