@@ -6,3 +6,5 @@ urlpatterns = [
     path( "", include('base.urls')),
     path('accounts/', include('accounts.urls'))
 ]
+
+handler404 = 'base.views.error_404'

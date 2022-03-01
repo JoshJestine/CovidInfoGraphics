@@ -10,6 +10,8 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 # Create your views here.
+def error_404(request, exception):
+    return render(request, '404.html')
 
 def lobby(request):
     return render(request, 'lobby.html')
