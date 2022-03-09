@@ -10,7 +10,7 @@
     <title>Sign Up Form by Colorlib</title>
 
     <!-- Font Icon -->
-    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="{% static 'styles/material-design-iconic-font.min.css' %}">
 
     <!-- Main css -->
     <link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/login.css' %}">
@@ -29,7 +29,7 @@
                 <div class="signin-content">
                     <div class="signin-image">
                         <figure> <img src= "{%static 'assets/img/signin-image.jpg' %}" class="img-fluid" alt=""></figure>
-                        <a href="#" class="signup-image-link">Create an account</a>
+                        <a href="regsiter" class="signup-image-link">Create an account</a>
                     </div>
 
                     <div class="signin-form">
@@ -54,14 +54,7 @@
                             <h3> {{message}}  </h3>
                             {% endfor %}
                     </div>
-                        <div class="social-login">
-                            <span class="social-label">Or login with</span>
-                            <ul class="socials">
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-                            </ul>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
