@@ -90,7 +90,6 @@
 
   <!-- Vendor JS Files -->
   <script src="{%static 'vendor/purecounter/purecounter.js' %}"></script>
-  <script src="{%static 'vendor/aos/aos.js' %}"></script>
 
   <script src="{%static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   <script src="{%static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
@@ -100,7 +99,13 @@
 
   <!-- Template Main JS File -->
   <script src="{%static 'assets/main1.js' %}"></script>
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    AOS.refresh();
+  </script>
 </body>
 
 </html>
