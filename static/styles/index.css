@@ -8,8 +8,23 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+::-webkit-scrollbar{
+  width:10px;
+}
+::-webkit-scrollbar-track{
+  background:var(--color-bg);
+  border-radius:50px;
+}
+::-webkit-scrollbar-thumb{
+  background: #1522e0;
+  border-radius: 50px;
+}
 :root {
   scroll-behavior: smooth;
+}
+
+p{
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -28,7 +43,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /*--------------------------------------------------------------
