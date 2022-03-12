@@ -60,8 +60,8 @@
           {% if user.is_authenticated %}
           <li><a class="nav-link scrollto">Hello, {{user.first_name}}</a></li>
           <li><a class="nav-link scrollto" href="/accounts/logout">Logout</a></li>
-          <li><a class="nav-link scrollto" href="/lobby">Videocall</a></li>
-          <li><a href="info">InfoGraph</a></li>
+          <li><a class="nav-link scrollto" href="/lobby/">Videocall</a></li>
+          <li><a href="/info/">InfoGraph</a></li>
           {% else %}
           
           <li><a class="nav-link scrollto" href="/accounts/register">Register</a></li>
