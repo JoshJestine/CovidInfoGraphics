@@ -28,7 +28,7 @@ WE_CHAT_USR = os.environ.get("WE_CHAT_USR") or ""
 WE_CHAT_PASS = os.environ.get("WE_CHAT_PASS") or ""
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 

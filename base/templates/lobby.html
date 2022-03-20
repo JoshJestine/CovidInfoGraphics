@@ -2,14 +2,16 @@
 {% load static %}
 {% block content %}
 
+
+
+
 <main>
 
     <section id="form-container">
 
-        <img id="logo" src="{% static 'images/chat-icon.png' %}"/>
- <a href="/dynamic"><h2>hello next</h2></a>
+        <img id="logo" src="{% static 'assets/img/video1.png' %}"/>
         <div id="welcome-message">
-            <h1>Welcome to MyChat</h1>
+            <h1>Welcome to Covid Infographics</h1>
             <p>A group video calling platform made just for you!</p>
         </div>
 
@@ -18,16 +20,19 @@
 
                 <div class="form-field">
                     <label>Room:</label>
-                    <input name="room" placeholder="Enter a room name..."  style="text-transform:uppercase"/>
+                    <input name="room" placeholder="Enter a room name"   >
                 </div>
 
                 <div class="form-field">
                     <label>Name:</label>
-                    <input name="name" placeholder="Enter your name..."  style="text-transform:uppercase"/>
+                    <input name="name" placeholder="Enter your name" >
                 </div>
 
-                <div class="form-field">
-                    <input type="submit" value="Join Stream" />
+                <div class="form-field" style="display:flex ;">
+
+
+                    <input type="submit" value="Join Stream" >
+                    <input type="submit" value="Return Home" href="/">
                 </div>
             </div>
         </form>
