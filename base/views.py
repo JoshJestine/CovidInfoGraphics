@@ -32,6 +32,9 @@ def dynamic(request):
 def chatroom(request):
     return render(request, 'chatroom.html')
 
+def hospital(request):
+    return render(request, 'hospital.html')
+
 def getToken(request):
     appId = "22b451f5433a4e66980a445ce5dd59ae"
     appCertificate = "3cb6ed1ca6684c5e95c2793785cc04de"

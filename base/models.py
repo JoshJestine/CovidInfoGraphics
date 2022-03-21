@@ -18,8 +18,8 @@ class Destination(models.Model):
     createdTime = models.DateTimeField(auto_now_add=True)
     updatedTime = models.DateTimeField(auto_now=True)
     desc = models.TextField()
-    price = models.IntegerField()
-    offer = models.BooleanField(default=False)
+    uploader = models.TextField(max_length=30)
+    
 
     def __str__(self):
         return self.name

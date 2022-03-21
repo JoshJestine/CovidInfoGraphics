@@ -18,6 +18,7 @@ urlpatterns = [
     path('get_member/', views.getMember),
     path('delete_member/', views.deleteMember),
     path('info/', views.info),
+    path('hospital/', views.hospital),
     
 ]
 
