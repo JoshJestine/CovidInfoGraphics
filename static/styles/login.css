@@ -57,8 +57,9 @@ display-flex, .display-flex, .display-flex-center, .signup-content, .signin-cont
     -ms-appearance: radio !important; }
   
   img {
-    max-width: 100%;
-    height: auto; }
+    max-width: 120%;
+    height: 100%;
+   }
   
   figure {
     margin: 0; }
@@ -168,7 +169,7 @@ display-flex, .display-flex, .display-flex-center, .signup-content, .signin-cont
   
   .form-submit {
     display: inline-block;
-    background: #6dabe4;
+    background: #1672c9;
     color: #fff;
     border-bottom: none;
     width: auto;
@@ -187,10 +188,12 @@ display-flex, .display-flex, .display-flex-center, .signup-content, .signin-cont
     margin-top: 16px; }
   
   .signup-image-link {
-    font-size: 14px;
+    font-size: 18px;
     color: #222;
     display: block;
-    text-align: center; }
+    text-align: center;
+    font-weight: 900;
+  }
   
   .term-service {
     font-size: 13px;
@@ -214,11 +217,14 @@ display-flex, .display-flex, .display-flex-center, .signup-content, .signin-cont
   input {
     width: 100%;
     display: block;
+    font-size: 15px;
+    font-weight: 900;
     border: none;
     border-bottom: 1px solid #999;
     padding: 6px 30px;
     font-family: Poppins;
-    box-sizing: border-box; }
+    box-sizing: border-box; 
+  }
     input::-webkit-input-placeholder {
       color: #999; }
     input::-moz-placeholder {
@@ -401,6 +407,7 @@ display-flex, .display-flex, .display-flex-center, .signup-content, .signin-cont
     background: #e72734; }
   
   .signin-form {
+    margin-top: 60px; 
     margin-right: 90px;
     margin-left: 80px; }
   
