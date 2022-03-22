@@ -14,6 +14,7 @@ class RoomMember(models.Model):
 class Destination(models.Model):
     
     name = models.CharField(max_length=100)
+    url = models.CharField(max_length=200, unique=True, verbose_name="URL (auto generated. Don't touch)")
     img = models.ImageField(upload_to='pics')
     createdTime = models.DateTimeField(auto_now_add=True)
     updatedTime = models.DateTimeField(auto_now=True)

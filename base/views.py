@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import JsonResponse
+from django.http import Http404, JsonResponse
 import random
 import time
 from agora_token_builder import RtcTokenBuilder
@@ -12,6 +12,12 @@ from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 def error_404(request, exception):
     return render(request, '404.html')
+
+def news_pages(request, news_url):
+    if Destination.objects.filter(url=news_url).exists():
+        return render(request, "news_single.html", {"dests": Destination.objects.get(url=news_url)})
+    else:
+        raise Http404("No such Event exists")
     
 def info(request):
     return render(request, 'info.html')
@@ -83,3 +89,4 @@ def deleteMember(request):
     )
     member.delete()
     return JsonResponse('Member deleted', safe=False)
+

@@ -19,7 +19,7 @@ urlpatterns = [
     path('delete_member/', views.deleteMember),
     path('info/', views.info),
     path('hospital/', views.hospital),
-    
+    path("e/<str:news_url>/", views.news_pages, name="news"),
 ]
 
 urlpatterns = urlpatterns + static(settings.MEDIA_URL , document_root=settings.MEDIA_ROOT)
