@@ -238,9 +238,9 @@ code, pre {
 }
 
 pre.literal-block {
-    margin: 10px;
+    
     background: var(--darkened-bg);
-    padding: 6px 8px;
+   
 }
 
 code strong {

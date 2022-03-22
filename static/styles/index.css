@@ -1534,8 +1534,10 @@ section {
   display: inline-block;
   line-height: 1;
 }
+
 .blog .entry .entry-content p {
   line-height: 24px;
+  white-space: pre-line;
 }
 .blog .entry .entry-content .read-more {
   -moz-text-align-last: right;

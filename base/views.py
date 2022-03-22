@@ -15,7 +15,7 @@ def error_404(request, exception):
 
 def news_pages(request, news_url):
     if Destination.objects.filter(url=news_url).exists():
-        return render(request, "news_single.html", {"dests": Destination.objects.get(url=news_url)})
+        return render(request, "news_single.html", {"dest": Destination.objects.get(url=news_url)})
     else:
         raise Http404("No such Event exists")
     

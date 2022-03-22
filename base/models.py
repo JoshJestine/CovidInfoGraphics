@@ -18,7 +18,7 @@ class Destination(models.Model):
     img = models.ImageField(upload_to='pics')
     createdTime = models.DateTimeField(auto_now_add=True)
     updatedTime = models.DateTimeField(auto_now=True)
-    desc = models.TextField()
+    desc = models.TextField(null=True,verbose_name="Content")
     uploader = models.TextField(max_length=30)
     
 
