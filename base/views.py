@@ -6,31 +6,36 @@ from agora_token_builder import RtcTokenBuilder
 from .models import Destination, RoomMember
 import json
 from django.views.decorators.csrf import csrf_exempt
-
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
 def error_404(request, exception):
     return render(request, '404.html')
 
+@login_required(login_url='login')
 def news_pages(request, news_url):
     if Destination.objects.filter(url=news_url).exists():
         return render(request, "news_single.html", {"dest": Destination.objects.get(url=news_url)})
     else:
         raise Http404("No such Event exists")
-    
+
+@login_required(login_url='login')
 def info(request):
     return render(request, 'info.html')
 
+@login_required(login_url='login')
 def lobby(request):
     return render(request, 'lobby.html')
 
 def index(request):
     return render(request, 'index.html')
 
+@login_required(login_url='login')
 def room(request):
     return render(request, 'room.html' )
 
+@login_required(login_url='login')
 def dynamic(request):
     dests= Destination.objects.all().order_by('-createdTime')
     return render(request, 'dynamic.html', {'dests':dests})
@@ -38,6 +43,7 @@ def dynamic(request):
 def chatroom(request):
     return render(request, 'chatroom.html')
 
+@login_required(login_url='login')
 def hospital(request):
     return render(request, 'hospital.html')
 
