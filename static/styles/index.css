@@ -1218,6 +1218,12 @@ section {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   transition: 0.3s;
 }
+
+.member-img{
+  height: 306px;
+  width: 306px;
+}
+
 .team .member .member-img {
   position: relative;
   overflow: hidden;
@@ -1538,6 +1544,7 @@ section {
 .blog .entry .entry-content p {
   line-height: 24px;
   white-space: pre-line;
+  font-size: 18px;
 }
 .blog .entry .entry-content .read-more {
   -moz-text-align-last: right;
