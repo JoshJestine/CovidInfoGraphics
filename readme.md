@@ -69,14 +69,12 @@ python manage.py runserver
 3. Registration Page
 ![image](https://user-images.githubusercontent.com/83024561/159271265-8b7fa150-e8c9-4fd4-a2ce-f59ad5d3cc0f.png)
 
+4. Latest News
+![image](https://user-images.githubusercontent.com/83024561/162269499-09bcadf7-8d2e-4c18-9f10-a58599b1e2de.png)
 
+5. Covid Analytics
+![image](https://user-images.githubusercontent.com/83024561/162269650-67a370ad-b711-4a5c-bf3d-851cc58ad944.png)
 
-## Project Demo
+6. Hospitals
+![image](https://user-images.githubusercontent.com/83024561/162269765-53a66093-6346-4cea-b4cd-09f6905b6019.png)
 
-- yet to be done
-
-## To Do list
- - [x] Making Basic ReadmeFile
- - [ ] Video of Proj
- - [ ] UI Fixes
- - [ ] Single Page of news
