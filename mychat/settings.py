@@ -85,6 +85,7 @@ DATABASES = {
         "CLIENT": {
             'name': 'wechat',
             'host': 'mongodb+srv://'+WE_CHAT_USR+':'+WE_CHAT_PASS+'@cluster0.1yefb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+            #'host': 'mongodb+srv://'+WE_CHAT_USR+':'+WE_CHAT_PASS+'@cluster0.1yefb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
             'username': WE_CHAT_USR,
             'password': WE_CHAT_PASS,
             "authMechanism": "SCRAM-SHA-1",
