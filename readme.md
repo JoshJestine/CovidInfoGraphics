@@ -1,4 +1,4 @@
-# Covid Infograhics
+# Covid Infographics
 
 - Covid Infographics hub is a combination of real time video calling application which a mix of covid analytics and latest news updates on covid.
 - The aim of the application is to make provide a better user interface which make the process easy and reliable.
