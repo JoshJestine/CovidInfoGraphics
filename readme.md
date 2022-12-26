@@ -3,6 +3,7 @@
 - Covid Infographics hub is a combination of real time video calling application which a mix of covid analytics and latest news updates on covid.
 - The aim of the application is to make provide a better user interface which make the process easy and reliable.
 - Since Heroku has shutdown it's free tier services the website is down.
+- Demo of this project is added at the end of this README File.
 
 ## Live Demo
 covid-infographics.herokuapp.com/
@@ -113,3 +114,7 @@ python manage.py runserver
   </a>
 </p>
 
+
+## Project Demo
+
+https://user-images.githubusercontent.com/83024561/209548471-cfd2ff4f-1634-4931-8b0c-e7a771daeb83.mp4
